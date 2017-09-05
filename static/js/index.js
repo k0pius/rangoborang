@@ -223,13 +223,13 @@ $(document).ready( function() {
    // of the mouse, set with a mousemove event listener below
 var dots = [],
     mouse = {
-      x: 4000,
+      x: 1000,
       y: 6000
     };
 
 // The Dot object used to scaffold the dots
 var Dot = function() {
-  this.x = 4000;
+  this.x = 1000;
   this.y = 6000;
   this.node = (function(){
     var n = document.createElement("div");
