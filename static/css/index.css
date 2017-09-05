@@ -1,3 +1,22 @@
+html {
+  cursor: URL("../media/mwand.gif"), auto;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html:active {
+  cursor: URL("../media/mwand2.gif"), auto !important;
+}
+
+.trail { /* className for the trail elements */
+    position: absolute;
+    height: 8px; width: 8px;
+    border-radius: 4px;
+    background: white;
+  }
+
 body {
     background-color: black;
 }
@@ -10,7 +29,24 @@ h1 {
   color: white;
   padding-bottom:5rem;
   position: relative;
+  user-select: none;
+-webkit-user-select: none; /* Chrome/Safari */
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+ */
+}
 
+h5 {
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: lighter;
+  color: white;
+  padding-top:7rem;
+  position: relative;
+  user-select: none;
+-webkit-user-select: none; /* Chrome/Safari */
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+ */
 }
 
 .container {
@@ -53,7 +89,7 @@ h1 {
 
 .c:hover {
     background-color:#661920;
-    cursor: pointer;
+
 }
 
 .c.hover {
@@ -74,7 +110,7 @@ h1 {
 
 .d:hover {
     background-color:#6e2819;
-    cursor: pointer;
+
 }
 
 .d.hover {
@@ -95,7 +131,7 @@ h1 {
 
 .e:hover {
     background-color:#735b20;
-    cursor: pointer;
+
 }
 
 .e.hover {
@@ -116,7 +152,7 @@ h1 {
 
 .f:hover {
     background-color:#1b613b;
-    cursor: pointer;
+
 }
 
 .f.hover {
@@ -137,7 +173,7 @@ h1 {
 
 .g:hover {
     background-color:#184d65;
-    cursor: pointer;
+
 }
 
 .g.hover {
@@ -158,7 +194,7 @@ h1 {
 
 .a:hover {
     background-color:#4e2753;
-    cursor: pointer;
+
 }
 
 .a.hover {
@@ -179,7 +215,7 @@ h1 {
 
 .b:hover {
     background-color:#6f3a62;
-    cursor: pointer;
+
 }
 
 .b.hover {
@@ -195,4 +231,8 @@ h1 {
     background-color: #43293d;
     border: 3px solid #f26fd4;
     color: #f26fd4;
+}
+
+.z {
+  z-index: 10;
 }

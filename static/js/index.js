@@ -23,6 +23,7 @@ $(document).ready( function() {
       cNote.play();
       eNote.play();
       gNote.play();
+      $(this).toggleClass('z');
     });
 
     // This controls the button for the d note.
@@ -41,6 +42,7 @@ $(document).ready( function() {
       dNote.play();
       fNote.play();
       aNote.play();
+      $(this).toggleClass('z');
     });
 
     // This controls the button for the e note.
@@ -59,6 +61,7 @@ $(document).ready( function() {
       eNote.play();
       gNote.play();
       bNote.play();
+      $(this).toggleClass('z');
     });
 
     // This controls the button for the f note.
@@ -77,6 +80,7 @@ $(document).ready( function() {
       fNote.play();
       aNote.play();
       cNote.play();
+      $(this).toggleClass('z');
     });
 
     // This controls the button for the g note.
@@ -95,6 +99,7 @@ $(document).ready( function() {
       gNote.play();
       bNote.play();
       dNote.play();
+      $(this).toggleClass('z');
     });
 
     // This controls the button for the a note.
@@ -113,6 +118,7 @@ $(document).ready( function() {
       aNote.play();
       cNote.play();
       eNote.play();
+      $(this).toggleClass('z');
     });
 
     // This controls the button for the b note.
@@ -131,6 +137,7 @@ $(document).ready( function() {
       bNote.play();
       dNote.play();
       fNote.play();
+      $(this).toggleClass('z');
     });
 
     // THESE ARE THE KEYCODE EVENTS TO PLAY THE NOTES
@@ -184,4 +191,98 @@ $(document).ready( function() {
       };
     });
 
+// Animated Cursor !
+    var playground = document.querySelector('html');
+    var cursorArray = ['url("./static/media/mwand/Layer1.png"), auto',
+                  'url("./static/media/mwand/Layer2.png"), auto',
+                  'url("./static/media/mwand/Layer3.png"), auto',
+                  'url("./static/media/mwand/Layer4.png"), auto',
+                  'url("./static/media/mwand/Layer5.png"), auto',
+                  'url("./static/media/mwand/Layer5.png"), auto',
+                  'url("./static/media/mwand/Layer6.png"), auto',
+                  'url("./static/media/mwand/Layer7.png"), auto',
+                  'url("./static/media/mwand/Layer8.png"), auto',
+                  'url("./static/media/mwand/Layer9.png"), auto',
+                  'url("./static/media/mwand/Layer10.png"), auto'];
+    i = 0;
+    (function cursor(){
+      playground.style.cursor  = cursorArray[i];
+      i++;
+      if(i == cursorArray.length){
+        i = 0;
+      }
+       setTimeout(cursor, 65);
+      })();
+
 });
+
+//------------------------Cursor Trail------------------------------------------
+
+// dots is an array of Dot objects,
+// mouse is an object used to track the X and Y position
+   // of the mouse, set with a mousemove event listener below
+var dots = [],
+    mouse = {
+      x: 4000,
+      y: 1500
+    };
+
+// The Dot object used to scaffold the dots
+var Dot = function() {
+  this.x = 4000;
+  this.y = 1500;
+  this.node = (function(){
+    var n = document.createElement("div");
+    n.className = "trail";
+    document.body.appendChild(n);
+    return n;
+  }());
+};
+// The Dot.prototype.draw() method sets the position of
+  // the object's <div> node
+Dot.prototype.draw = function() {
+  this.node.style.left = this.x + "px";
+  this.node.style.top = this.y + "px";
+};
+
+// Creates the Dot objects, populates the dots array
+for (var i = 0; i < 200; i++) {
+  var d = new Dot();
+  dots.push(d);
+}
+
+// This is the screen redraw function
+function draw() {
+  // Make sure the mouse position is set everytime
+    // draw() is called.
+  var x = mouse.x,
+      y = mouse.y;
+
+  // This loop is where all the 90s magic happens
+  dots.forEach(function(dot, index, dots) {
+    var nextDot = dots[index + 1] || dots[0];
+
+    dot.x = x;
+    dot.y = y;
+    dot.draw();
+    x += (nextDot.x - dot.x) * .5;
+    y += (nextDot.y - dot.y) * .5;
+
+  });
+}
+
+addEventListener("mousemove", function(event) {
+  //event.preventDefault();
+  mouse.x = event.pageX+52;
+  mouse.y = event.pageY+70;
+});
+
+// animate() calls draw() then recursively calls itself
+  // everytime the screen repaints via requestAnimationFrame().
+function animate() {
+  draw();
+  requestAnimationFrame(animate);
+}
+
+// And get it started by calling animate().
+animate();
