@@ -224,13 +224,13 @@ $(document).ready( function() {
 var dots = [],
     mouse = {
       x: 4000,
-      y: 1500
+      y: 6000
     };
 
 // The Dot object used to scaffold the dots
 var Dot = function() {
   this.x = 4000;
-  this.y = 1500;
+  this.y = 6000;
   this.node = (function(){
     var n = document.createElement("div");
     n.className = "trail";
