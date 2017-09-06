@@ -223,14 +223,14 @@ $(document).ready( function() {
    // of the mouse, set with a mousemove event listener below
 var dots = [],
     mouse = {
-      x: 1000,
-      y: 6000
+      x: 4000,
+      y: -1500
     };
 
 // The Dot object used to scaffold the dots
 var Dot = function() {
-  this.x = 1000;
-  this.y = 6000;
+  this.x = 4000;
+  this.y = -1500;
   this.node = (function(){
     var n = document.createElement("div");
     n.className = "trail";
@@ -273,8 +273,8 @@ function draw() {
 
 addEventListener("mousemove", function(event) {
   //event.preventDefault();
-  mouse.x = event.pageX+52;
-  mouse.y = event.pageY+70;
+  mouse.x = event.pageX+5;
+  mouse.y = event.pageY+7;
 });
 
 // animate() calls draw() then recursively calls itself
