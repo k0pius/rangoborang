@@ -142,15 +142,15 @@ $(document).ready( function() {
 
     // THESE ARE THE KEYCODE EVENTS TO PLAY THE NOTES
     document.addEventListener('keydown', function(event) {
-      if(event.code === 'KeyC' || event.code === 'Backquote') {
+      if(event.code === 'KeyC' || event.code === 'Digit3') {
         $('.c').toggleClass('hover');
         cNote.currentTime = 0;
         cNote.play();
-      }else if(event.code === 'KeyD' || event.code === 'Digit2') {
+      }else if(event.code === 'KeyD' || event.code === 'Digit4') {
         $('.d').toggleClass('hover');
         dNote.currentTime = 0;
         dNote.play();
-      }else if(event.code === 'KeyE' || event.code === 'Digit4') {
+      }else if(event.code === 'KeyE' || event.code === 'Digit5') {
         $('.e').toggleClass('hover');
         eNote.currentTime = 0;
         eNote.play();
@@ -158,15 +158,15 @@ $(document).ready( function() {
         $('.f').toggleClass('hover');
         fNote.currentTime = 0;
         fNote.play();
-      }else if(event.code === 'KeyG' || event.code === 'Digit8') {
+      }else if(event.code === 'KeyG' || event.code === 'Digit7') {
         $('.g').toggleClass('hover');
         gNote.currentTime = 0;
         gNote.play();
-      }else if(event.code === 'KeyA' || event.code === 'Digit0') {
+      }else if(event.code === 'KeyA' || event.code === 'Digit8') {
         $('.a').toggleClass('hover');
         aNote.currentTime = 0;
         aNote.play();
-      }else if(event.code === 'KeyB' || event.code === 'Equal') {
+      }else if(event.code === 'KeyB' || event.code === 'Digit9') {
         $('.b').toggleClass('hover');
         bNote.currentTime = 0;
         bNote.play();
@@ -174,19 +174,19 @@ $(document).ready( function() {
     });
 
     document.addEventListener('keyup', function(event) {
-      if(event.code === 'KeyC' || event.code === 'Backquote') {
+      if(event.code === 'KeyC' || event.code === 'Digit3') {
         $('.c').removeClass('hover');
-      }else if(event.code === 'KeyD' || event.code === 'Digit2') {
+      }else if(event.code === 'KeyD' || event.code === 'Digit4') {
         $('.d').removeClass('hover');
-      }else if(event.code === 'KeyE' || event.code === 'Digit4') {
+      }else if(event.code === 'KeyE' || event.code === 'Digit5') {
         $('.e').removeClass('hover');
       }else if(event.code === 'KeyF' || event.code === 'Digit6') {
         $('.f').removeClass('hover');
-      }else if(event.code === 'KeyG' || event.code === 'Digit8') {
+      }else if(event.code === 'KeyG' || event.code === 'Digit7') {
         $('.g').removeClass('hover');
-      }else if(event.code === 'KeyA' || event.code === 'Digit0') {
+      }else if(event.code === 'KeyA' || event.code === 'Digit8') {
         $('.a').removeClass('hover');
-      }else if(event.code === 'KeyB' || event.code === 'Equal') {
+      }else if(event.code === 'KeyB' || event.code === 'Digit9') {
         $('.b').removeClass('hover');
       };
     });
