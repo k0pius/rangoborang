@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/kopius
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://nathan.earth
+  * I am kopius (https://keybase.io/kopius) on keybase.
+  * I have a public key ASASi_q_HnuPI92x3GtBH0Yhx5qaP5s8wQ5qAfRniq4cXgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120128bfabf1e7b8f23ddb1dc6b411f4621c79a9a3f9b3cc10e6a01f4678aae1c5e0a",
+      "host": "keybase.io",
+      "kid": "0120128bfabf1e7b8f23ddb1dc6b411f4621c79a9a3f9b3cc10e6a01f4678aae1c5e0a",
+      "uid": "4c1113cc4082b0fcb67d5f13d12f9519",
+      "username": "kopius"
+    },
+    "merkle_root": {
+      "ctime": 1515874816,
+      "hash": "8f7a3b3c80e9a3a1bf6968bbcf81259ee451c15edd3ef496ce8a62eefaa4ff7e372b6f109ab5d3358c7accdda9f22e80b0ebaa606c55b9953a9e26ec0dd4131b",
+      "hash_meta": "962acb205805dbc1ad21588db9b12049bd4aaa171873c6d7b5abc946af8226ec",
+      "seqno": 1923729
+    },
+    "service": {
+      "hostname": "nathan.earth",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.38"
+  },
+  "ctime": 1515874828,
+  "expire_in": 504576000,
+  "prev": "baca2b3938f414a0f51e531dce710694a86c411602141ce6838ca29826c85729",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgEov6vx57jyPdsdxrQR9GIceamj+bPMEOagH0Z4quHF4Kp3BheWxvYWTFA0F7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMTI4YmZhYmYxZTdiOGYyM2RkYjFkYzZiNDExZjQ2MjFjNzlhOWEzZjliM2NjMTBlNmEwMWY0Njc4YWFlMWM1ZTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMTI4YmZhYmYxZTdiOGYyM2RkYjFkYzZiNDExZjQ2MjFjNzlhOWEzZjliM2NjMTBlNmEwMWY0Njc4YWFlMWM1ZTBhIiwidWlkIjoiNGMxMTEzY2M0MDgyYjBmY2I2N2Q1ZjEzZDEyZjk1MTkiLCJ1c2VybmFtZSI6ImtvcGl1cyJ9LCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTUxNTg3NDgxNiwiaGFzaCI6IjhmN2EzYjNjODBlOWEzYTFiZjY5NjhiYmNmODEyNTllZTQ1MWMxNWVkZDNlZjQ5NmNlOGE2MmVlZmFhNGZmN2UzNzJiNmYxMDlhYjVkMzM1OGM3YWNjZGRhOWYyMmU4MGIwZWJhYTYwNmM1NWI5OTUzYTllMjZlYzBkZDQxMzFiIiwiaGFzaF9tZXRhIjoiOTYyYWNiMjA1ODA1ZGJjMWFkMjE1ODhkYjliMTIwNDliZDRhYWExNzE4NzNjNmQ3YjVhYmM5NDZhZjgyMjZlYyIsInNlcW5vIjoxOTIzNzI5fSwic2VydmljZSI6eyJob3N0bmFtZSI6Im5hdGhhbi5lYXJ0aCIsInByb3RvY29sIjoiaHR0cDoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMzgifSwiY3RpbWUiOjE1MTU4NzQ4MjgsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJwcmV2IjoiYmFjYTJiMzkzOGY0MTRhMGY1MWU1MzFkY2U3MTA2OTRhODZjNDExNjAyMTQxY2U2ODM4Y2EyOTgyNmM4NTcyOSIsInNlcW5vIjo4LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQPcXnyujA46vkEUekBdRjnwPIvC+2tXSTIRcj3OkrB/Zfk4ZdtiW7zxPQlMW16OS11w/z0l9m7aOua63FrJbSw+oc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCDqRN59e2CUk8uSqNEN3ZSXRbT9DOUbgINma4xR7OYWC6N0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kopius
+
+==================================================================
